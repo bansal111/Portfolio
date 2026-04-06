@@ -10,8 +10,10 @@ const { buildContactEmail } = require('./emailTemplate');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const frontendUrl = process.env.FRONTEND_URL?.replace(/\/$/, '') || 'http://portfolio-chv3.vercel.app/';
+const frontendUrl = process.env.FRONTEND_URL?.replace(/\/$/, '') || 'https://portfolio-gray-five-506wuw9zd4.vercel.app';
 const allowedOrigins = [frontendUrl];
+
+console.log('Allowed frontend origin:', frontendUrl);
 
 // Middleware
 app.use(cors({
@@ -23,7 +25,16 @@ app.use(cors({
   },
   credentials: true,
 }));
+app.options('/api/contact', cors({ origin: allowedOrigins, credentials: true }));
 app.use(express.json());
+
+app.use((err, req, res, next) => {
+  if (err && err.message && err.message.includes('CORS policy')) {
+    console.error('CORS error:', err.message);
+    return res.status(403).json({ success: false, message: 'CORS error: origin not allowed' });
+  }
+  next(err);
+});
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -98,7 +109,7 @@ app.post('/api/contact', async (req, res) => {
     });
 
   } catch (err) {
-    console.error('Contact route error:', err);
+    console.error('Contact route error:', err.message || err, err.stack || 'no stack');
     res.status(500).json({
       success: false,
       message: 'Server error. Please try again.',
