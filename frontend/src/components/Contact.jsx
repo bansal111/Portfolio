@@ -13,7 +13,7 @@ const Contact = ({ darkMode }) => {
     e.preventDefault();
     setStatus({ loading: true, success: '', error: '' });
     try {
-      const res = await fetch('http://localhost:5000/api/contact', {
+      const res = await fetch('https://portfolio-chv3.vercel.app/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),

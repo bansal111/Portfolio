@@ -100,7 +100,7 @@ const Hero = ({ darkMode }) => {
             <div className='w-full pt-4 sm:pt-6'>
               <div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4'
                 data-aos='fade-up' data-aos-delay='700'>
-                <a href='http://localhost:5000/api/download/pdf' target='_blank' rel='noreferrer' className='w-full sm:w-auto'>
+                <a href='https://portfolio-chv3.vercel.app/api/download/pdf' target='_blank' rel='noreferrer' className='w-full sm:w-auto'>
                   <button className='w-full sm:w-auto inline-flex items-center justify-center text-white bg-gradient-to-r from-orange-500 to-amber-500 border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300'>
                     <DownloadIcon className='w-4 h-4 sm:h-5 sm:w-5 mr-2' />
                     Download CV (PDF)

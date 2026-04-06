@@ -23,12 +23,12 @@ const Footer = ({ darkMode }) => {
 
           {/* CV Download links */}
           <div className='flex flex-col sm:flex-row gap-2 text-sm'>
-            <a href='http://localhost:5000/api/download/pdf' target='_blank' rel='noreferrer'
+            <a href='https://portfolio-chv3.vercel.app/api/download/pdf' target='_blank' rel='noreferrer'
               className='px-4 py-2 rounded-full font-medium text-white transition-all hover:shadow-md hover:shadow-orange-500/30'
               style={{ background: 'linear-gradient(to right, #f97316, #f59e0b)' }}>
               📄 Download CV (PDF)
             </a>
-            <a href='http://localhost:5000/api/download/docx' target='_blank' rel='noreferrer'
+            <a href='https://portfolio-chv3.vercel.app/api/download/docx' target='_blank' rel='noreferrer'
               className='px-4 py-2 rounded-full font-medium transition-all border'
               style={{
                 borderColor: '#f97316',
