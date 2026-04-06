@@ -12,17 +12,17 @@ const About = ({darkMode}) => {
           data-aos-delay="300"
           className="flex flex-wrap justify-center gap-4 relative order-2 lg:order-1"
         >
-          <div className="relative w-0 h-80 lg:w-96 lg:h-96">
+          <div className="relative w-full max-w-xs aspect-square sm:max-w-sm lg:max-w-md">
             {/* Image */}
             <div
-              className="absolute -inset-6 lg:-inset-20 bg-gradient-to-r from-[#f97316] via-[#fb923c] to-[#f59e0b] rotate-12 star-shape z-0"
+              className="absolute inset-0 -translate-x-2 -translate-y-2 bg-gradient-to-r from-[#f97316] via-[#fb923c] to-[#f59e0b] rotate-12 star-shape z-0"
               data-aos="zoom-in"
               data-aos-delay="600"
             ></div>
             <img
               src={about}
               alt="About Image"
-              className="absolute inset-0 w-full h-full object-cover z-10 transition-all duration-300"
+              className="absolute inset-0 w-full h-full object-contain z-10 transition-all duration-300"
               data-aos="zoom-in"
               data-aos-delay="400"
             />
