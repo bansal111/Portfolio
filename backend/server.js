@@ -10,9 +10,17 @@ const { buildContactEmail } = require('./emailTemplate');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-//Middleware
+const frontendUrl = process.env.FRONTEND_URL?.replace(/\/$/, '') || 'http://portfolio-chv3.vercel.app/';
+const allowedOrigins = [frontendUrl];
+
+// Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    return callback(new Error(`CORS policy: origin '${origin}' not allowed`));
+  },
   credentials: true,
 }));
 app.use(express.json());
