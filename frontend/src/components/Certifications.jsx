@@ -61,6 +61,14 @@ const certifications = [
     badge: jklu,
     color: 'from-yellow-500 to-orange-500',
   },
+  {
+    title: 'Introduction to Drone Engineering',
+    platform: 'JK Lakshmipat University',
+    date: '2026',
+    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:AP:c7618c3e-2303-4419-8700-db1462da8d84',
+    badge: jklu,
+    color: 'from-purple-500 to-pink-500',
+  },
 ];
 
 const Certifications = ({ darkMode }) => {

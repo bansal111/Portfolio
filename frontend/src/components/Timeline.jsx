@@ -4,7 +4,7 @@ const timelineData = [
     title: 'Secondary (Class IX andX)',
     institution: 'K.L Arya D.A.V Public School, Hisar',
     period: '2018 – 2020',
-    description: 'Secondary Education with core subjects including Mathematics, Science, and English.',
+    description: 'Completed CBSE curriculum with 91%, building a strong academic foundation across core subjects and developing early interest in analytical and problem-solving skills.',
     icon: '📚',
   },
   {
@@ -12,7 +12,7 @@ const timelineData = [
     title: 'Senior Secondary (Class XI and XII)',
     institution: 'The Vivekanand School, Delhi',
     period: '2020 – 2022',
-    description: 'Science stream with Mathematics, Physics, and Computer Science.',
+    description: 'Completed CBSE curriculum with 80% in the Science stream (PCM), strengthening concepts in Mathematics and Physics while developing an interest in programming and engineering fundamentals.',
     icon: '📚',
   },
   {
@@ -20,7 +20,7 @@ const timelineData = [
     title: 'Bachelor of Technology - Computer and Communication Engineering',
     institution: 'JK Lakshmipat University, Jaipur',
     period: '2023 – 2026',
-    description: 'Pursuing B.Tech in Computer & CommunicationEngineering with specialisation in VLSI and Minor in Mathematics.',
+    description: 'Pursuing B.Tech in Computer & CommunicationEngineering with specialisation in VLSI and Minor in Mathematics and Recipient of a 100% scholarship and consistently featured on the Dean’s Honors List, maintaining an 9.8 CGPA.',
     icon: '🎓',
   },
   {
@@ -29,6 +29,14 @@ const timelineData = [
     institution: 'LNMIIT, Jaipur',
     period: 'May 2025 – Jul 2025',
     description: 'Designed and implemented a system to analyze human motion using Continuous Wave (CW) Doppler radar by capturing frequency shifts caused by movement. Processed radar signals using MATLAB to extract velocity information and identify motion patterns, demonstrating practical applications of signal processing in real-time sensing.',
+    icon: '💼',
+  },
+  {
+    type: 'experience',
+    title: 'Teaching Assistant C and DSA',
+    institution: 'JK Lakshmipat University, Jaipur',
+    period: 'Jan 2025 – Apr 2025',
+    description: 'Provided assistance in teaching C programming and Data Structures & Algorithms to undergraduate students, conducting Coding Hours.',
     icon: '💼',
   },
 ];
